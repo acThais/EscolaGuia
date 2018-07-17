@@ -1,0 +1,162 @@
+https://git-scm.com/download/win
+
+fonte :
+http://www.eduardopires.net.br/2014/10/tutorial-asp-net-mvc-5-ddd-ef-automapper-ioc-dicas-e-truques/
+video: 
+https://www.youtube.com/watch?v=i9Il79a2uBU
+download projeto: 
+https://www.dropbox.com/s/bg6lvjebexd9ecw/ProjetoModeloDDD.Application.zip?dl=0
+
+p 2012
+principal install-package AutoMapper -Version 3.2.1
+Install-Package AutoMapper -Version 2.0.0
+Install-Package FastMapper
+
+install-package Ninject.mvc5 			p appmvc  4 se n der 
+
+
+install-package entityframework  			em data e no projeto app se der erro
+Enable-Migrations					em data depois de criar todas as classes
+update-database  -script  				mostra o script antes de criar(depois do enabled)
+update-database -verbose					SÓ DEPOIS DE COLOCAR OS CONF	
+update-database -script -force				atualizar database
+
+
+se tiver banco rodar:  Add-Migration_InitialCreate-IgnoreChanges
+ 
+localdb colocar o da conexao
+					
+
+Estrutura
+0 - Presentation
+	-Projeto Web... MVC
+	Obs: Jogar projeto readme fora
+        add referencia de dominio e data
+	        Mudar Pasta model para ViewModel
+ViewModel
+	ClienteViewModel.cs
+		Obs: Copiar os atributos da entidade cliente
+AutoMapper
+AutoMaperConfig.cs
+DomainToViewModelMappingProfile.cs
+ViewModelToDomainMappingProfile.cs
+
+Rodar o Install-Package AutoMapper
+Views
+	Clientes
+		Index (add views)  > index > list >de clienteview model
+		Cliente (add view) > create > create> clienteviewmodel
+	Home
+
+	obs: add em global
+AutoMapperConfig.RegisterMappings();	
+1 - Interface
+2 - Services
+3 - Aplication
+	Projeto classe.Aplication
+	obj: limpar ref e classes 
+	
+4 - Domain
+      	Projeto classe.domain
+	obj: limpar ref e classes 
+		Entities  
+			Classes do projeto get set (prop + tab)
+		Interfaces (CRUD)
+			IRepositoryBase.cs (add Interface)
+			IClienteRepository (add Interface) 
+		Services
+5 - Infra
+ 	5.1- Data ()
+Projeto classe.Infra.Data
+        add referencia de dominio
+	Contexto
+		NomeProjetoContexto.cs
+			obs:fica 
+public dbSet<Cliente> clientes {get; set;} 
+modelbuilder.conventions.remove
+
+	EntityConfig
+		ClienteConfiguration.cs
+			obs: configuracoes de chaves primarias tamanhos,relacionamentos, etc
+       rodar o Update-Database - verbose -Force
+	Repositories
+		Classes para as interfaces\ metodos de buscas personalizadas
+		RepositoryBase.cs (clicar com direito Implement Interface)
+	5.2 - CrossCutting
+
+Install-Package EntityFramework 
+: DbContexto
+Logo após criar contexto.cs dentro infra\data\contexto
+
+
+ctor + tab para construtor
+Em webConfig
+  <connectionStrings>
+    <add name="Estudo" connectionString="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\Estudo.mdf;Initial Catalog=EstudoDB;Integrated Security=True"
+ providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+
+
+Enable-Migrations
+	Cria uma pasta migrations dentro de infra.data
+ 	muda arquivo config que gerou p true
+Update-Database - verbose -Force
+
+Install-Package AutoMapper
+
+Relacionamentos ex:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pegar projeto
+
+git clone endreço
+
+digitar usuario e pass
+
+.gitignore
+variaveia amb GIT-HOME D:\APPSW\GIT
+	PATH %GIT-HOME%\BIN
+
+git status
+git config --global user.email “”
+                                   .name
+git remote -v   verifica caminho
+		
+
+
+
+
+
+…or create a new repository on the command line
+echo "# CadeMeuMedico" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git Add -A
+git remote add origin https://github.com/acThais/ProjetoEscola.git
+git push -u origin master
+
+
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+Import code
+
+
+
+
+
+
+

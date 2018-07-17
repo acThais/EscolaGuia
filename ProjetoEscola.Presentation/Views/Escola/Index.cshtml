@@ -1,0 +1,39 @@
+﻿@model ProjetoEscola.Application.ViewModel.EscolaViewModel
+
+
+@{
+    ViewBag.Title = "Escolas";
+}
+<h2>Escolas</h2>
+
+@if (Model.ListaDeEscolas != null)
+{
+    <table id="GridTable" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th width="60%">@Html.LabelFor(c => c.EscolaId)</th>
+                <th width="20%">@Html.LabelFor(c => c.Nome)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var e = 0; Model.ListaDeEscolas.Count() > e; e++)
+            {
+                <tr>
+                    <td>@Model.ListaDeEscolas[e].EscolaId</td>
+                    <td>@Model.ListaDeEscolas[e].Nome</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+}
+else
+{
+
+}
+
+
+    <p>Ainda não á registros no banco de dados.</p>
+    @Html.ActionLink("Cadastrar nova escola", "Create", "Escola")
+

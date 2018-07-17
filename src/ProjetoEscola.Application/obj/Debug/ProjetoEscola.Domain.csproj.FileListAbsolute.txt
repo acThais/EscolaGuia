@@ -1,0 +1,11 @@
+F:\ProjetoEscola\ProjetoEscola\src\ProjetoEscola.Application\obj\Debug\ProjetoEscola.Domain.csprojResolveAssemblyReference.cache
+F:\ProjetoEscola\ProjetoEscola\src\ProjetoEscola.Application\bin\Debug\ProjetoEscola.Domain.dll
+F:\ProjetoEscola\ProjetoEscola\src\ProjetoEscola.Application\bin\Debug\ProjetoEscola.Domain.pdb
+F:\ProjetoEscola\ProjetoEscola\src\ProjetoEscola.Application\obj\Debug\ProjetoEscola.Domain.dll
+F:\ProjetoEscola\ProjetoEscola\src\ProjetoEscola.Application\obj\Debug\ProjetoEscola.Domain.pdb
+C:\Users\fabio\Downloads\ProjetoEscola-master\ProjetoEscola\src\ProjetoEscola.Application\bin\Debug\ProjetoEscola.Domain.dll
+C:\Users\fabio\Downloads\ProjetoEscola-master\ProjetoEscola\src\ProjetoEscola.Application\bin\Debug\ProjetoEscola.Domain.pdb
+C:\Users\fabio\Downloads\ProjetoEscola-master\ProjetoEscola\src\ProjetoEscola.Application\obj\Debug\ProjetoEscola.Domain.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Downloads\ProjetoEscola-master\ProjetoEscola\src\ProjetoEscola.Application\obj\Debug\ProjetoEscola.Domain.dll
+C:\Users\fabio\Downloads\ProjetoEscola-master\ProjetoEscola\src\ProjetoEscola.Application\obj\Debug\ProjetoEscola.Domain.pdb
+C:\Users\fabio\Downloads\ProjetoEscola-master\ProjetoEscola\src\ProjetoEscola.Application\obj\Debug\ProjetoEscola.Domain.csprojResolveAssemblyReference.cache
